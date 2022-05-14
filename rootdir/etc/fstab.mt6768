@@ -77,4 +77,6 @@ odm /odm ext4 ro wait,,logical,first_stage_mount,nofail
 /dev/block/by-name/boot_para /boot_para emmc defaults defaults
 /dev/block/by-name/odmdtbo /odmdtbo emmc defaults defaults
 /dev/block/by-name/otp /otp emmc defaults defaults
-/dev/block/zram0 none swap defaults zramsize=55%
+
+# ZRAM
+/dev/block/zram0                none               swap defaults                                                 zramsize=55%,max_comp_streams=8
