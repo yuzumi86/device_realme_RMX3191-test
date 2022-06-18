@@ -142,8 +142,12 @@ on fs
     chmod +x /vendor/bin/swap_enable.sh
     start swap_enable_init
 #else
-    #swapon_all /vendor/fstab.enableswap
+    #swapon_all /vendor/fstab.mt6768
 #endif
+
+    # Update touchpanel firmware in case we ship newer firmware in /odm
+    write /proc/touchpanel/tp_fw_update 0
+
 
     mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
 
