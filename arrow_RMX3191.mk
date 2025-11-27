@@ -9,13 +9,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit from RMX3191 device
 $(call inherit-product, device/realme/RMX3191/device.mk)
 
 PRODUCT_DEVICE := RMX3191
-PRODUCT_NAME := lineage_RMX3191
+PRODUCT_NAME := arrow_RMX3191
 PRODUCT_BRAND := RMX3191
 PRODUCT_MODEL := realme C25
 PRODUCT_MANUFACTURER := realme
