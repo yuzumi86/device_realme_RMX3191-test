@@ -18,6 +18,8 @@ $(call inherit-product, vendor/realme/RMX3191/RMX3191-vendor.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
+
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
