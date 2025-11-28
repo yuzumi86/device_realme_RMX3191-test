@@ -83,6 +83,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     fstab.mt6768 \
+    fstab.enableswap \
     init.mt6768.rc \
     init.recovery.mt6768 
 
