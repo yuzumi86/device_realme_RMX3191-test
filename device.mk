@@ -68,8 +68,7 @@ PRODUCT_PACKAGES += \
     audio_policy.stub
 
 PRODUCT_PACKAGES += \
-    BesLoudness \
-    MtkInCallService
+    BesLoudness 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
@@ -165,14 +164,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.0.vendor \
     android.hardware.gnss@2.1.vendor
-
-PRODUCT_PACKAGES += \
-    android.hardware.gnss-service.mediatek
-
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health-service.mediatek \
-    android.hardware.health-service.mediatek-recovery
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -285,9 +276,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/nfc_features.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/nfc_features.xml
 
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-mediatekv2
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -444,8 +432,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.mtk \
-    android.hardware.thermal@2.0-impl-mtk \
     android.hardware.thermal@1.0-impl
 
 # Touch
@@ -472,7 +458,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy \
     wpa_supplicant \
     hostapd \
-    libwifi-hal-mt66xx
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
