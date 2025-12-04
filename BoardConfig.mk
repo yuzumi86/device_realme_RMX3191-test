@@ -70,8 +70,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/realme/RMX3191
 TARGET_KERNEL_CONFIG := c25_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r487747
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r487747
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/mylitle-clang
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_KERNEL_SEPARATED_DTBO := true
@@ -185,6 +184,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # VNDK
 BOARD_VNDK_VERSION := current
+
+# Display
+TARGET_SCREEN_DENSITY := 390
 
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
