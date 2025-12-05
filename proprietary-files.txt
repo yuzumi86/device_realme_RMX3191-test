@@ -734,6 +734,7 @@ vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/hw/vulkan.mt6768.so
 vendor/lib64/egl/libGLES_meow.so
+vendor/lib64/egl/libMEOW_data.so
 vendor/lib64/egl/libMEOW_gift.so
 vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
@@ -791,6 +792,8 @@ vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/libtlcWidevineModularDrm.so
+vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
 
 # EngineerMode
@@ -2133,6 +2136,8 @@ vendor/bin/recordevent
 vendor/bin/replayevent
 vendor/bin/vpud
 vendor/etc/init/vpud.rc
+vendor/lib/AVCSecureVdecCA.so
+vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libJpgEncPipe.so
 vendor/lib/libh264dec_customize.so
@@ -2165,6 +2170,8 @@ vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
+vendor/lib64/AVCSecureVdecCA.so
+vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libacdk.so
 vendor/lib64/libadpcmdec_mtk.so
@@ -2575,7 +2582,8 @@ vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
 # WiFi
 odm/etc/wifi/txpowerctrl.cfg
 odm/etc/wifi/wifi.cfg
-
+odm/etc/wifi/wifi_active_channel.cfg
+odm/etc/wifi/wifi_passive_channel.cfg
 vendor/bin/hw/tetheroffloadservice
 vendor/bin/netdagent
 vendor/bin/netdc
