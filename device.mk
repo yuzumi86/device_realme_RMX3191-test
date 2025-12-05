@@ -128,6 +128,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
+# Vendor Log Tag
+include $(LOCAL_PATH)/configs/props/vendor_logtag.mk
+
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0.vendor \
     android.hardware.drm@1.1.vendor \
