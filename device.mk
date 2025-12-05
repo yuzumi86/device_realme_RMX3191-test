@@ -413,7 +413,6 @@ PRODUCT_PACKAGES += \
     meta_init.rc \
     meta_init.vendor.rc \
     multi_init.rc \
-    init.aging.rc \
     init.recovery.mt6768.rc \
 
 
