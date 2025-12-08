@@ -88,6 +88,9 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
+    libshim_camera_metadata
+
+PRODUCT_PACKAGES += \
     RemoveCameraPackages \
     Aperture
 
@@ -301,9 +304,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    libshim_audio \
-    libshim_camera_metadata \
-    libshim_utils
+    libshim_vtservice
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -376,10 +377,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.RMX3191
     
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # Vibrator
 TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
 PRODUCT_PACKAGES += \
