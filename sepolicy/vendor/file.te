@@ -21,3 +21,5 @@ type sysfs_mmc_host, fs_type, sysfs_type;
 type sysfs_mtusb_saving, fs_type, sysfs_type;
 type latency_device, dev_type;
 type pps_socket, file_type;
+type vendor_audio_prop, property_type;
+type vendor_wlan_fw_prop, property_type;
