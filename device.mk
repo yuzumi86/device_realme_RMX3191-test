@@ -140,6 +140,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.RMX3191 \
     android.hardware.health-service.RMX3191-recovery
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0 \
