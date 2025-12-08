@@ -408,7 +408,6 @@ PRODUCT_PACKAGES += \
     meta_init.modem.rc \
     meta_init.project.rc \
     meta_init.rc \
-    meta_init.vendor.rc \
     multi_init.rc \
     init.recovery.mt6768.rc \
 
