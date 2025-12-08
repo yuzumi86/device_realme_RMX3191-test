@@ -386,31 +386,19 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor
 
 # Rootdir
-
 PRODUCT_PACKAGES += \
     fstab.mt6768 \
-    factory_init.connectivity.common.rc \
-    factory_init.connectivity.rc \
-    factory_init.project.rc \
-    factory_init.rc \
-    init.ago.rc \
-    init.cgroup.rc \
-    init.connectivity.common.rc \
+    fstab.mt6768_ramdisk \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6768.rc \
+    init.mt6768.power.rc \
     init.mt6768.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
-    init_connectivity.rc \
-    meta_init.connectivity.common.rc \
-    meta_init.connectivity.rc \
-    meta_init.modem.rc \
-    meta_init.project.rc \
-    meta_init.rc \
-    multi_init.rc \
-    init.recovery.mt6768.rc \
-
+    init.target.rc \
+    ueventd.mtk.rc \
+    ueventd.oplus.rc
 
 # Fastboot
 PRODUCT_PACKAGES += \
