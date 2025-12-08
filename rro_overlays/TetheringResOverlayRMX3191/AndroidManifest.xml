@@ -2,9 +2,7 @@
     package="com.android.networkstack.tethering.overlay.RMX3191"
     android:versionCode="1"
     android:versionName="1.0">
-    <application 
-      android:hasCode="false" 
-      android:label="TetheringResOverlay"/>
+    <application android:hasCode="false" />
     <overlay
       android:targetPackage="com.android.networkstack.tethering"
       android:targetName="TetheringConfig"
